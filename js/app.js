@@ -53,7 +53,7 @@ function leerDatosCurso(curso){
                 curso.cantidad++;
                 return curso; // retorna el objeto actualizado 
             }else{
-                curso; // retorna el objeto que no son actualizados 
+                return curso; // retorna el objeto que no son actualizados 
             }
         } );
         articulosCarrito = [...cursos];
@@ -62,9 +62,6 @@ function leerDatosCurso(curso){
         //agrega elementos al arreglo de carrito 
         articulosCarrito = [...articulosCarrito,infoCurso];
     }
-
-    
-    
     
     console.log(articulosCarrito);
     carritoHTML();
